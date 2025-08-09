@@ -1,0 +1,12 @@
+Halaman website ini dibuat menggunakan teknologi HTML5 TailwindCSS dan sedikit Javascript
+Jika ada halaman tidak nampil mohon pastikan internet berjalan dengan stabil karena ini menggunakan
+CDN TailwindCSS Bukan CLI jdi pastikan semua koneksi berjalan dengan baik
+
+Untuk memulai gunakan live server dengan membuka file index.html 
+dan pastikan halaman mau display seperti berikut : https://i.ibb.co/G4g5rM6L/Screenshot-2025-07-25-180737.png
+
+/// Disini saya juga menambahkan BOT supaya user lebih gampang dan mudah mengenal Tentang perusahaan Toptrans (BOT ini Berbasis javascript dari chatbase)
+
+@yogadinantakom
+
+~trimksih

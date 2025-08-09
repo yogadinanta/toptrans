@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/icon/icon_toptrans_1x1.svg">
+    <title>Tentang Toptrans</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/font/font.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body class="font-poppins bg-white text-[#0b1c39]">
+     <header
+      id="main-header"
+      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] shadow fixed top-0 w-full z-50 transition-colors duration-700"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            id="icon"
+            src="./assets/icon/white_icon_top.svg"
+            alt="Toptrans Logo"
+            class="h-[60px] w-auto"
+          />
+          <span class="text-xl font-thin">Gateway</span>
+        </div>
+       <nav class="md:flex items-center space-x-6 text-sm font-medium">
+          <a href="./index.html" class="hover:text-gray-600">Beranda</a>
+          <a href="#solusi" class="hover:text-gray-600 flex items-center gap-1">
+            Solusi 
+          </a>
+          <a href="#layanan" class="hover:text-gray-600">Layanan</a>
+          <a href="#team" class="hover:text-gray-600">Team</a>
+          <a href="#" class="hover:text-gray-600 flex items-center gap-1">
+            Perusahaan <i class="fas fa-chevron-down text-xs text-gray-600"></i>
+          </a>
+        </nav>
+        <div>
+          <a
+            href="#"
+            class="bg-[#000000] text-white px-5 py-2.5 rounded-md font-semibold text-sm border-2 border-transparent hover:bg-transparent hover:text-[#3476e7] hover:border-[#3476e7] transition duration-300"
+          >
+            Member Area
+          </a>
+        </div>
+      </div>
+    </header>
+<div class="h-28"></div>
+
+
+
+
+<footer
+      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] text-white px-10 py-12"
+    >
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div>
+          <div class="mb-4">
+            <img
+              src="./assets/icon/white_icon_top.svg"
+              alt="Toptrans Logo"
+              class="w-32"
+            />
+          </div>
+          <h4 class="font-semibold text-white mb-1">Trans LIFE</h4>
+          <p class="text-sm text-gray-300">Lihat karir di trans life.</p>
+
+          <div class="flex gap-4 mt-6 text-gray-300">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Penggunaan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Startups & Early</a></li>
+            <li><a href="#">Businesses</a></li>
+            <li><a href="#">Growing businesses</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Produk</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Online Payment</a></li>
+            <li><a href="#">Payment Gateway</a></li>
+            <li><a href="#">Link Payement</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Panduan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Pusat Bantuan</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Docs API</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Perusahaan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">TransLIFE</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Karir Kerja</a></li>
+            <li><a href="#">Tentang kami</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 mt-10 pt-6 flex md:flex-row items-center justify-between text-sm text-white"
+      >
+        <div class="mb-4 md:mb-0">
+          bagian dari <span class="text-white font-semibold">LT</span>
+          <span class="text-white">financial</span>
+        </div>
+        <div>© 2025 Toptrans (PT Toptrans)</div>
+      </div>
+    </footer>
+
+    <script>
+  AOS.init();
+</script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const header = document.getElementById("main-header");
+      const logo = document.getElementById("icon");
+
+      function updateHeaderOnScroll() {
+        if (window.scrollY > 100) {
+          header.classList.remove(
+            "bg-gradient-to-l",
+            "from-[#dd0751]",
+            "to-[#d80032]",
+            "text-[#f6f9ff]"
+          );
+          header.classList.add("bg-white", "text-[#0b1c39]");
+          logo.src = "./assets/icon/toptrans_color.svg";
+        } else {
+          header.classList.add(
+            "bg-gradient-to-l",
+            "from-[#dd0751]",
+            "to-[#d80032]",
+            "text-[#f6f9ff]"
+          );
+          header.classList.remove("bg-white", "text-[#0b1c39]");
+          logo.src = "./assets/icon/white_icon_top.svg";
+        }
+      }
+
+      window.addEventListener("scroll", updateHeaderOnScroll);
+      window.addEventListener("DOMContentLoaded", updateHeaderOnScroll);
+    </script>
+
+  </body>
+</html>
+
+
+
+

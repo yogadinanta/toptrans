@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Toptrans Navbar</title>
+    <link rel="icon" href="./assets/icon/icon_toptrans_1x1.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/font/font.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-[#fefefe] font-poppins">
+    <header
+      id="main-header"
+      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] shadow fixed top-0 w-full z-50 transition-colors duration-500"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            id="icon"
+            src="./assets/icon/white_icon_top.svg"
+            alt="Toptrans Logo"
+            class="h-[60px] w-auto"
+          />
+          <span class="text-xl font-thin">Gateway</span>
+        </div>
+        <nav class="md:flex items-center space-x-6 text-sm font-medium">
+          <a href="#" class="hover:text-gray-600">Beranda</a>
+          <a href="#solusi" class="hover:text-gray-600 flex items-center gap-1">
+            Solusi 
+          </a>
+          <a href="#layanan" class="hover:text-gray-600">Layanan</a>
+          <a href="#team" class="hover:text-gray-600">Team</a>
+          <a href="#" class="hover:text-gray-600 flex items-center gap-1">
+            Perusahaan <i class="fas fa-chevron-down text-xs text-gray-600"></i>
+          </a>
+        </nav>
+        <div>
+          <a
+            href="#"
+            class="bg-[#000000] text-white px-5 py-2.5 rounded-md font-semibold text-sm border-2 border-transparent hover:bg-transparent hover:text-[#0b55c5] hover:border-[#0b55c5] transition duration-300"
+          >
+            Member Area
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="h-24"></div>
+
+    <section
+      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] text-white py-20 px-6 md:px-16"
+    >
+      <div
+        class="max-w-7xl mx-auto flex lg:flex-row ibg-gradient-to-l from-[#dd0751] to-[#d80032]tems-center justify-between gap-12"
+      >
+        <div class="max-w-xl">
+          <div
+            class="flex items-center gap-2 bg-white text-[#0b1c39] w-fit px-4 py-1.5 rounded-full text-sm font-semibold mb-5 shadow"
+          >
+            <img
+              src="https://www.linkqu.id/wp-content/uploads/2024/10/Logo-Bank-Indonesia.webp"
+              alt="Bank Indonesia"
+              class="h-5 w-auto"
+            />
+            Resmi & Berlisensi <span class="font-medium">Bank Indonesia</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
+            Who We Are?
+          </h1>
+
+          <p class="text-lg leading-relaxed mb-8">
+            Toptrans <span class="font-bold">(PT Top Pembayaran Bersama)</span>
+            adalah perusahaan teknologi yang menyediakan solusi pembayaran
+            digital yang cepat, aman, dan mudah untuk mendukung berbagai
+            kebutuhan bisnis.
+          </p>
+
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="bg-black text-white px-5 py-3 rounded-full font-semibold text-sm hover:bg-gray-800 transition flex items-center gap-2"
+            >
+              <i class="fab fa-apple text-lg"></i> App Store
+            </a>
+            <a
+              href="#"
+              class="bg-black text-white px-5 py-3 rounded-full font-semibold text-sm hover:bg-gray-800 transition flex items-center gap-2"
+            >
+              <i class="fab fa-google-play text-lg"></i> Play Store
+            </a>
+          </div>
+        </div>
+
+        <div class="max-w-md mx-auto">
+          <img src="./assets/img/hero_section.svg" alt="icon Toptrans" />
+        </div>
+      </div>
+    </section>
+
+<section class="bg-white -mt-28 relative z-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-gradient-to-br from-white via-purple-50 to-pink-50 rounded-2xl shadow-md p-8">
+      <div class="text-center mb-4">
+        <p class="text-lg font-semibold text-gray-800">
+          <i class="fas fa-fire text-2xl text-red-500"></i> Dipercaya lebih dari
+          <span class="text-gray-900 font-bold">1.000 perusahaan dan pelaku bisnis</span>.
+        </p>
+      </div>
+
+      <div id="scrollContainer" class="overflow-x-hidden relative w-full">
+        <div id="scrollContent" class="flex gap-8 items-center w-max animate-scroll">
+          <template id="logoGroup">
+            <img src="./assets/icon/minipul.png" alt="Minipul" class="h-16" />
+            <img src="./assets/icon/socia.webp" alt="Sociabuzz" class="h-16" />
+            <img src="./assets/icon/kai.webp" alt="KAI" class="h-16" />
+            <img src="./assets/icon/ipaymu.webp" alt="Ipaymu" class="h-16" />
+            <img src="./assets/icon/bukakios.webp" alt="bukakios" class="h-20" />
+            <img src="./assets/icon/kaspro.webp" alt="Kaspro" class="h-16" />
+          </template>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section id="solusi" class="bg-white py-20 px-6 md:px-10 lg:px-24">
+      <div class="max-w-7xl mx-auto flex lg:flex-row gap-10 items-start">
+        <div class="grid sm:grid-cols-2 gap-6 flex-1">
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="mb-4 text-[#0d2853] text-2xl">
+              <i class="fas fa-credit-card"></i>
+            </div>
+            <div data-aos="fade-up">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              30+ Metode Pembayaran
+            </h3>
+            <p class="text-sm text-gray-600 mb-3">
+             Dari Virtual Account, E-Wallet, QRIS, hingga pembayaran ritel dan pulsa.
+            </p>
+          </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="mb-4 text-[#0d2853] text-2xl">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div data-aos="fade-up">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Dashboard Interaktif
+            </h3>
+            <p class="text-sm text-gray-600 mb-3">
+             Monitor transaksi secara real-time dengan tampilan modern dan user-friendly.
+            </p>
+          </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="mb-4 text-[#0d2853] text-2xl">
+              <i class="fas fa-sync-alt"></i>
+            </div>
+            <div data-aos="fade-up">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Realtime Settlement
+            </h3>
+            <p class="text-sm text-gray-600 mb-3">
+              Dana langsung cair untuk QRIS, E-Wallet, dan Virtual Account.
+            </p>
+          </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl shadow-md">
+            <div class="mb-4 text-[#0d2853] text-2xl">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div data-aos="fade-up">
+            <h3 class="text-lg font-semibold text-gray-800 mb-2">
+              Aktivasi Instan
+            </h3>
+            <p class="text-sm text-gray-600 mb-3">
+              Daftar dan mulai integrasi dengan cepat tanpa hambatan.
+            </p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="flex-1">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#0d2853] mb-4">
+            Toptrans Memberikan Solusi
+            <em class="italic text-[#0d2853]">Berbeda</em>
+          </h2>
+          <p class="text-gray-700 mb-4 text-[17px] leading-relaxed">
+           Kami hadir untuk menjadi salah satu layanan pembayaran digital terbaik, yang lebih adaptif relevan serta terupdate.
+          </p>
+          <p class="text-gray-600 mb-6 text-[15px] leading-relaxed">
+            Toptrans dibentuk dari pengalaman nyata menjawab tantangan sistem pembayaran. Kami mengembangkan solusi yang akan memudahkan Anda mengelola transaksi secara efisien demi menunjang pertumbuhan bisnis Anda.
+          </p>
+          <a
+            href="about.html"
+            class="inline-block bg-[#0d2853] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1a3c72] transition duration-300"
+          >
+            Tentang Toptrans
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="bg-white py-16 px-4">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+      >
+        <div>
+          <h2 class="text-3xl font-bold text-gray-800 leading-tight mb-6">
+            Toptrans Memberikan Layanan dan <br />
+            Fitur Terbaik Untuk Bisnis Anda
+          </h2>
+          <ul class="space-y-5">
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+              <div class="bg-white p-4 rounded-lg shadow-sm w-full">
+                <p class="text-gray-700 leading-relaxed">
+                  Tersedia <strong>Realtime Settlement</strong>, dana Anda
+                  langsung cair di hari yang sama tanpa menunggu masa kliring
+                  H+0 — termasuk hari Sabtu, Minggu, dan hari libur nasional.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+              <div class="bg-white p-4 rounded-lg shadow-sm w-full">
+                <p class="text-gray-700 leading-relaxed">
+                  Mendukung berbagai metode pembayaran digital seperti
+                  <strong
+                    >QRIS, e-Wallet, Virtual Account, Toko Retail
+                    (Indomaret/Alfamart)</strong
+                  >, hingga <strong>Pulsa</strong>.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+              <div class="bg-white p-4 rounded-lg shadow-sm w-full">
+                <p class="text-gray-700 leading-relaxed">
+                  Saldo Anda dapat <strong>dicairkan kapan saja</strong>, 24/7
+                  tanpa jeda hari kerja, termasuk di akhir pekan dan hari libur.
+                </p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+              <div class="bg-white p-4 rounded-lg shadow-sm w-full">
+                <p class="text-gray-700 leading-relaxed">
+                  Dukung pembayaran menggunakan
+                  <strong>Pulsa Telkomsel, XL, Axis, dan Tri</strong> dengan
+                  sistem validasi otomatis yang cepat dan efisien.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex justify-center">
+          <img
+            src="./assets/img/Payment-2.png"
+            alt="Metode Pembayaran Toptrans"
+            class="w-full max-w-2xl rounded-xl shadow-md"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="visi-misi"
+      class="bg-white pb-20 pt-5 px-6 md:px-24 text-[#0b1c39]"
+    >
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+          <h2
+            class="text-4xl font-bold mb-4 flex justify-center items-center gap-2"
+          >
+            Visi & Misi Kami
+          </h2>
+          <p class="text-lg text-gray-600">
+            Komitmen kami dalam membangun masa depan digital Indonesia
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+          <div
+            class="bg-gradient-to-tr from-gray-50 to-gray-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <h3 class="text-2xl font-semibold">Visi</h3>
+            </div>
+            <p class="text-gray-800 leading-relaxed">
+              Toptrans berkomitmen menjadi mitra terpercaya dalam ekosistem
+              pembayaran digital Indonesia dengan menghadirkan teknologi yang
+              mudah diakses, aman, dan mendukung pertumbuhan UMKM serta pelaku
+              bisnis digital di seluruh penjuru negeri.
+            </p>
+            <p class="text-gray-800 leading-relaxed mt-4">
+              Kami percaya bahwa dengan menyediakan infrastruktur pembayaran
+              yang handal, kami dapat membantu mempercepat pertumbuhan Ekonomi
+              digital Indonesia.
+            </p>
+          </div>
+
+          <div
+            class="bg-gradient-to-tr from-orange-50 to-red-100 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+          >
+            <div class="flex items-center gap-3 mb-4">
+              <i class="fas fa-fire text-2xl text-red-500"></i>
+              <h3 class="text-2xl font-semibold">Misi</h3>
+            </div>
+            <div class="space-y-3 text-gray-800">
+              <div class="flex items-start gap-2">
+                <i class="fas fa-check text-green-500 mt-1.5"></i>
+                <p>
+                  Menghadirkan solusi pembayaran yang aman, cepat, dan mudah
+                  digunakan.
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <i class="fas fa-check text-green-500 mt-1.5"></i>
+                <p>
+                  Mendukung pertumbuhan ekonomi digital melalui teknologi
+                  inovatif.
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <i class="fas fa-check text-green-500 mt-1.5"></i>
+                <p>
+                  Menjalin kemitraan strategis dengan berbagai sektor bisnis.
+                </p>
+              </div>
+              <div class="flex items-start gap-2">
+                <i class="fas fa-check text-green-500 mt-1.5"></i>
+                <p>
+                  Memberikan pelayanan prima berbasis kepercayaan dan
+                  transparansi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section id="team" class="bg-gray-50 py-20 px-6 md:px-24">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-4xl font-bold text-[#0b1c39] mb-4">Tim Kami</h2>
+    <p class="text-gray-600 text-lg mb-12">
+      Kami adalah tim profesional dengan semangat tinggi dalam membangun masa depan pembayaran digital Indonesia.
+    </p>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+        <img
+          src="./assets/img/yogadinanta.JPG"
+          alt="I Komang Yoga Dinanta"
+          class="w-32 h-32 rounded-full mx-auto object-cover mb-4"
+        />
+        <h4 class="text-xl font-semibold text-[#0b1c39]">Yogadinanta</h4>
+        <p class="text-gray-500 text-sm mb-2">CEO & Founder</p>
+        <p class="text-gray-600 text-sm">Visi besar dan kepemimpinan strategis untuk kemajuan Toptrans.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+        <img
+          src="./assets/img/Primahesa.jpg"
+          alt="Primahesa Putra"
+          class="w-32 h-32 rounded-full mx-auto object-cover mb-4"
+        />
+        <h4 class="text-xl font-semibold text-[#0b1c39]">Primahesa</h4>
+        <p class="text-gray-500 text-sm mb-2">CTO</p>
+        <p class="text-gray-600 text-sm">Menjaga performa teknologi dan inovasi sistem pembayaran.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+        <img
+          src="./assets/img/ayu.jpg"
+          alt="Ayu Lestari"
+          class="w-32 h-32 rounded-full mx-auto object-cover mb-4"
+        />
+        <h4 class="text-xl font-semibold text-[#0b1c39]">Ayu Lestari</h4>
+        <p class="text-gray-500 text-sm mb-2">Marketing Lead</p>
+        <p class="text-gray-600 text-sm">Mengembangkan strategi pemasaran dan hubungan dengan klien.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300">
+        <img
+          src="./assets/img/bima.jpg"
+          alt="Bima Putra"
+          class="w-32 h-32 rounded-full mx-auto object-cover mb-4"
+        />
+        <h4 class="text-xl font-semibold text-[#0b1c39]">Bima Putra</h4>
+        <p class="text-gray-500 text-sm mb-2">Product Manager</p>
+        <p class="text-gray-600 text-sm">Menjaga kualitas fitur dan pengalaman pengguna.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer
+      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] text-white px-10 py-12"
+    >
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div>
+          <div class="mb-4">
+            <img
+              src="./assets/icon/white_icon_top.svg"
+              alt="Toptrans Logo"
+              class="w-32"
+            />
+          </div>
+          <h4 class="font-semibold text-white mb-1">Trans LIFE</h4>
+          <p class="text-sm text-gray-300">Lihat karir di trans life.</p>
+
+          <div class="flex gap-4 mt-6 text-gray-300">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Penggunaan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Startups & Early</a></li>
+            <li><a href="#">Businesses</a></li>
+            <li><a href="#">Growing businesses</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Produk</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Online Payment</a></li>
+            <li><a href="#">Payment Gateway</a></li>
+            <li><a href="#">Link Payement</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Panduan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Pusat Bantuan</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Docs API</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Perusahaan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">TransLIFE</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Karir Kerja</a></li>
+            <li><a href="#">Tentang kami</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 mt-10 pt-6 flex md:flex-row items-center justify-between text-sm text-white"
+      >
+        <div class="mb-4 md:mb-0">
+          bagian dari <span class="text-white font-semibold">LT</span>
+          <span class="text-white">financial</span>
+        </div>
+        <div>© 2025 Toptrans (PT Toptrans)</div>
+      </div>
+    </footer>
+
+
+    <!-- BOT -->
+     <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="MoAvKYq8qj0934q1uXyYe";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<!-- END BOT -->
+ 
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const header = document.getElementById("main-header");
+      const logo = document.getElementById("icon");
+
+      function updateHeaderOnScroll() {
+        if (window.scrollY > 100) {
+          header.classList.remove(
+            "bg-gradient-to-l",
+            "from-[#dd0751]",
+            "to-[#d80032]",
+            "text-[#f6f9ff]"
+          );
+          header.classList.add("bg-white", "text-[#0b1c39]");
+          logo.src = "./assets/icon/toptrans_color.svg";
+        } else {
+          header.classList.add(
+            "bg-gradient-to-l",
+            "from-[#dd0751]",
+            "to-[#d80032]",
+            "text-[#f6f9ff]"
+          );
+          header.classList.remove("bg-white", "text-[#0b1c39]");
+          logo.src = "./assets/icon/white_icon_top.svg";
+        }
+      }
+
+      window.addEventListener("scroll", updateHeaderOnScroll);
+      window.addEventListener("DOMContentLoaded", updateHeaderOnScroll);
+    </script>
+    <script src="./assets/js/sc.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+  </body>
+</html>
