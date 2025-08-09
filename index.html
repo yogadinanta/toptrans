@@ -22,8 +22,7 @@
   <body class="bg-[#fefefe] font-poppins">
     <header
       id="main-header"
-      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] shadow fixed top-0 w-full z-50 transition-colors duration-500"
-    >
+      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] shadow fixed top-0 w-full z-50 transition-colors duration-500">
       <div
         class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between"
       >
@@ -37,15 +36,82 @@
           <span class="text-xl font-thin">Gateway</span>
         </div>
         <nav class="md:flex items-center space-x-6 text-sm font-medium">
-          <a href="#" class="hover:text-gray-600">Beranda</a>
-          <a href="#solusi" class="hover:text-gray-600 flex items-center gap-1">
-            Solusi 
-          </a>
-          <a href="#layanan" class="hover:text-gray-600">Layanan</a>
-          <a href="#team" class="hover:text-gray-600">Team</a>
-          <a href="#" class="hover:text-gray-600 flex items-center gap-1">
-            Perusahaan <i class="fas fa-chevron-down text-xs text-gray-600"></i>
-          </a>
+          <a href="#" class="relative inline-block after:block after:h-[2px] after:bg-gray-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Beranda</a>
+          <!-- Group untuk hover -->
+<div class="relative group">
+  <!-- Trigger -->
+  <a href="#solusi" class="hover:text-gray-600 flex items-center gap-1 text-white">
+    Solusi
+    <!-- Panah bawah & atas, ganti otomatis saat hover -->
+    <i class="fas fa-chevron-down text-xs block group-hover:hidden"></i>
+    <i class="fas fa-chevron-up text-xs hidden group-hover:block"></i>
+  </a>
+
+  <!-- Buffer hover -->
+  <div class="absolute top-full left-0 w-full h-4"></div>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute left-0 top-[calc(100%+0.5rem)] w-[22rem] bg-white text-black 
+           rounded-md shadow-lg overflow-hidden
+           opacity-0 group-hover:opacity-100 invisible group-hover:visible
+           transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto"
+  >
+    <a
+      href="#pulsa"
+      class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200"
+    >Solusi Pembayaran Pulsa No #1 Di Indonesia</a>
+    <a
+      href="#qris"
+      class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200"
+    >Solusi Pembayaran QRIS Mudah &amp; Murah</a>
+    <a
+      href="#ewallet"
+      class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200"
+    >Solusi Pembayaran E-Wallet Dengan Nama Toko Kamu</a>
+  </div>
+</div>
+
+          <a href="#layanan" class="relative inline-block after:block after:h-[2px] after:bg-gray-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Layanan</a>
+          <a href="#team" class="relative inline-block after:block after:h-[2px] after:bg-gray-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Team</a>
+<div class="relative group inline-block">
+  <!-- Trigger -->
+  <a href="#solusi" class="hover:text-gray-600 flex items-center gap-1 text-white">
+    Perusahaan
+    <!-- Panah bawah & atas, ganti otomatis saat hover -->
+    <i class="fas fa-chevron-down text-xs block group-hover:hidden"></i>
+    <i class="fas fa-chevron-up text-xs hidden group-hover:block"></i>
+  </a>
+
+  <!-- Invisible Hover Buffer -->
+  <div class="absolute top-full left-0 w-full h-6"></div>
+
+  <!-- Dropdown Menu -->
+<div
+  class="absolute left-0 top-[calc(100%+1.5rem)] w-44 bg-white text-black 
+         rounded-md shadow-lg overflow-hidden
+         opacity-0 group-hover:opacity-100 invisible group-hover:visible
+         transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto"
+>
+
+    <a
+      href="#tentang"
+      class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200"
+      >Tentang Kami</a
+    >
+    <a
+      href="#karir"
+      class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200"
+      >Karir</a
+    >
+    <a
+      href="#kontak"
+      class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200"
+      >Kontak</a
+    >
+  </div>
+</div>
+
         </nav>
         <div>
           <a
@@ -71,7 +137,7 @@
             class="flex items-center gap-2 bg-white text-[#0b1c39] w-fit px-4 py-1.5 rounded-full text-sm font-semibold mb-5 shadow"
           >
             <img
-              src="https://www.linkqu.id/wp-content/uploads/2024/10/Logo-Bank-Indonesia.webp"
+              src="/assets/icon/Logo-Bank-Indonesia.webp"
               alt="Bank Indonesia"
               class="h-5 w-auto"
             />
@@ -231,7 +297,7 @@
                 <p class="text-gray-700 leading-relaxed">
                   Tersedia <strong>Realtime Settlement</strong>, dana Anda
                   langsung cair di hari yang sama tanpa menunggu masa kliring
-                  H+0 — termasuk hari Sabtu, Minggu, dan hari libur nasional.
+                  H+0 termasuk hari Sabtu, Minggu, dan hari libur nasional.
                 </p>
               </div>
             </li>
@@ -497,35 +563,67 @@
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const header = document.getElementById("main-header");
-      const logo = document.getElementById("icon");
+   <script>
+  const header = document.getElementById("main-header");
+  const logo = document.getElementById("icon");
 
-      function updateHeaderOnScroll() {
-        if (window.scrollY > 100) {
-          header.classList.remove(
-            "bg-gradient-to-l",
-            "from-[#dd0751]",
-            "to-[#d80032]",
-            "text-[#f6f9ff]"
-          );
-          header.classList.add("bg-white", "text-[#0b1c39]");
-          logo.src = "./assets/icon/toptrans_color.svg";
-        } else {
-          header.classList.add(
-            "bg-gradient-to-l",
-            "from-[#dd0751]",
-            "to-[#d80032]",
-            "text-[#f6f9ff]"
-          );
-          header.classList.remove("bg-white", "text-[#0b1c39]");
-          logo.src = "./assets/icon/white_icon_top.svg";
-        }
-      }
+  // Hanya ambil link langsung di nav (level 1), bukan isi dropdown
+  const navLinks = header.querySelectorAll("nav > a, nav > div > a");
+  const dropdownIcons = header.querySelectorAll("nav > div > a i");
 
-      window.addEventListener("scroll", updateHeaderOnScroll);
-      window.addEventListener("DOMContentLoaded", updateHeaderOnScroll);
-    </script>
+  function updateHeaderOnScroll() {
+    if (window.scrollY > 100) {
+      // Ubah background & teks utama header
+      header.classList.remove(
+        "bg-gradient-to-l",
+        "from-[#dd0751]",
+        "to-[#d80032]",
+        "text-[#f6f9ff]"
+      );
+      header.classList.add("bg-white", "text-[#0b1c39]");
+      logo.src = "./assets/icon/toptrans_color.svg";
+
+      // Ubah warna link utama (level 1)
+      navLinks.forEach(link => {
+        link.classList.remove("text-white");
+        link.classList.add("text-[#0b1c39]");
+      });
+
+      // Ubah warna ikon panah
+      dropdownIcons.forEach(icon => {
+        icon.classList.remove("text-white");
+        icon.classList.add("text-[#0b1c39]");
+      });
+
+    } else {
+      // Kembalikan background & teks utama header
+      header.classList.add(
+        "bg-gradient-to-l",
+        "from-[#dd0751]",
+        "to-[#d80032]",
+        "text-[#f6f9ff]"
+      );
+      header.classList.remove("bg-white", "text-[#0b1c39]");
+      logo.src = "./assets/icon/white_icon_top.svg";
+
+      // Kembalikan warna link utama
+      navLinks.forEach(link => {
+        link.classList.add("text-white");
+        link.classList.remove("text-[#0b1c39]");
+      });
+
+      // Kembalikan warna ikon panah
+      dropdownIcons.forEach(icon => {
+        icon.classList.add("text-white");
+        icon.classList.remove("text-[#0b1c39]");
+      });
+    }
+  }
+
+  window.addEventListener("scroll", updateHeaderOnScroll);
+  window.addEventListener("DOMContentLoaded", updateHeaderOnScroll);
+</script>
+
     <script src="./assets/js/sc.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
