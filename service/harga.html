@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Toptrans Navbar</title>
+    <link rel="icon" href="./assets/icon/icon_toptrans_1x1.svg" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/font/font.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-[#fefefe] font-poppins">
+    <header
+      id="main-header"
+      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] shadow fixed top-0 w-full z-50 transition-colors duration-500">
+      <div
+        class="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-3">
+          <img
+            id="icon"
+            src="../assets/icon/white_icon_top.svg"
+            alt="Toptrans Logo"
+            class="h-[60px] w-auto"
+          />
+          <span class="text-xl font-thin">Gateway</span>
+        </div>
+        <nav class="md:flex items-center space-x-6 text-sm font-medium">
+          <a href="#" class="relative inline-block after:block after:h-[2px] after:bg-gray-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Beranda</a>
+          <!-- Group untuk hover -->
+<div class="relative group">
+  <!-- Trigger -->
+  <a href="#solusi" class="hover:text-gray-600 flex items-center gap-1 text-white">
+    Solusi
+    <!-- Panah bawah & atas, ganti otomatis saat hover -->
+    <i class="fas fa-chevron-down text-xs block group-hover:hidden"></i>
+    <i class="fas fa-chevron-up text-xs hidden group-hover:block"></i>
+  </a>
+
+  <!-- Buffer hover -->
+  <div class="absolute top-full left-0 w-full h-4"></div>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute left-0 top-[calc(100%+0.5rem)] w-[22rem] bg-white text-black 
+           rounded-md shadow-lg overflow-hidden
+           opacity-0 group-hover:opacity-100 invisible group-hover:visible
+           transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto"
+  >
+    <a
+      href="#pulsa"
+      class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200"
+    >Solusi Pembayaran Pulsa No #1 Di Indonesia</a>
+    <a
+      href="#qris"
+      class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200"
+    >Solusi Pembayaran QRIS Mudah &amp; Murah</a>
+    <a
+      href="#ewallet"
+      class="block px-4 py-3 text-sm font-medium hover:bg-gray-100 transition-colors duration-200"
+    >Solusi Pembayaran E-Wallet Dengan Nama Toko Kamu</a>
+  </div>
+</div>
+
+          <a href="#layanan" class="relative inline-block after:block after:h-[2px] after:bg-gray-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Layanan</a>
+          <a href="#team" class="relative inline-block after:block after:h-[2px] after:bg-gray-600 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left">Team</a>
+<div class="relative group inline-block">
+  <!-- Trigger -->
+  <a href="#solusi" class="hover:text-gray-600 flex items-center gap-1 text-white">
+    Perusahaan
+    <!-- Panah bawah & atas, ganti otomatis saat hover -->
+    <i class="fas fa-chevron-down text-xs block group-hover:hidden"></i>
+    <i class="fas fa-chevron-up text-xs hidden group-hover:block"></i>
+  </a>
+
+  <!-- Invisible Hover Buffer -->
+  <div class="absolute top-full left-0 w-full h-6"></div>
+
+  <!-- Dropdown Menu -->
+<div
+  class="absolute left-0 top-[calc(100%+1.5rem)] w-44 bg-white text-black 
+         rounded-md shadow-lg overflow-hidden
+         opacity-0 group-hover:opacity-100 invisible group-hover:visible
+         transition-all duration-300 z-50 pointer-events-none group-hover:pointer-events-auto"
+>
+
+    <a
+      href="#tentang"
+      class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200"
+      >Tentang Kami</a
+    >
+    <a
+      href="#karir"
+      class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200"
+      >Karir</a
+    >
+    <a
+      href="#kontak"
+      class="block px-4 py-2 hover:bg-gray-100 transition-colors duration-200"
+      >Kontak</a
+    >
+  </div>
+</div>
+
+        </nav>
+        <div>
+          <a
+            href="#"
+            class="bg-[#000000] text-white px-5 py-2.5 rounded-md font-semibold text-sm border-2 border-transparent hover:bg-transparent hover:text-[#0b55c5] hover:border-[#0b55c5] transition duration-300"
+          >
+            Member Area
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="h-24"></div>
+<body>
+<section class="bg-gray-100 py-16">
+  <div class="max-w-6xl mx-auto px-4">
+    <!-- Judul -->
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold text-gray-800">Harga kompetitif, dengan biaya transparan.</h2>
+      <p class="text-gray-600 mt-4">
+        Semua channel pembayaran kami memiliki harga yang jelas & transparan. Kami dan partner kami memastikan bahwa jasa yang kami sediakan tetap kompetitif. Semua harga di bawah ini adalah harga umum untuk pendaftaran awal, jika kamu memiliki volume transaksi besar harga bisa lebih murah dan bisa di nego.
+      </p>
+    </div>
+
+    <!-- Virtual Account -->
+    <div class="mb-10">
+      <h3 class="text-xl font-semibold mb-4 text-gray-800">Virtual Account</h3>
+      <div class="grid grid-cols-3 gap-6">
+        <!-- Card Item -->
+        <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-6 
+                    hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
+          <div class="flex items-center gap-4">
+            <img src="https://assets.tokovoucher.id/2022/11/065303bb0d98a0e72292e93b90045d18.png" alt="BRIVA" class="w-20">
+            <span class="font-semibold text-gray-800 text-lg">BRIVA</span>
+          </div>
+          <div class="text-right">
+            <p class="font-bold text-gray-800 text-lg">Rp3.000</p>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">H+0</span>
+          </div>
+        </div>
+
+                <!-- Card Item -->
+        <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-6 
+                    hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
+          <div class="flex items-center gap-4">
+            <img src="https://assets.tokovoucher.id/2022/11/065303bb0d98a0e72292e93b90045d18.png" alt="BRIVA" class="w-20">
+            <span class="font-semibold text-gray-800 text-lg">BRIVA</span>
+          </div>
+          <div class="text-right">
+            <p class="font-bold text-gray-800 text-lg">Rp3.000</p>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">H+0</span>
+          </div>
+        </div>
+
+                <!-- Card Item -->
+        <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-6 
+                    hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
+          <div class="flex items-center gap-4">
+            <img src="https://assets.tokovoucher.id/2022/11/065303bb0d98a0e72292e93b90045d18.png" alt="BRIVA" class="w-20">
+            <span class="font-semibold text-gray-800 text-lg">BRIVA</span>
+          </div>
+          <div class="text-right">
+            <p class="font-bold text-gray-800 text-lg">Rp3.000</p>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">H+0</span>
+          </div>
+        </div>
+
+                <!-- Card Item -->
+        <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-6 
+                    hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
+          <div class="flex items-center gap-4">
+            <img src="https://assets.tokovoucher.id/2022/11/065303bb0d98a0e72292e93b90045d18.png" alt="BRIVA" class="w-20">
+            <span class="font-semibold text-gray-800 text-lg">BRIVA</span>
+          </div>
+          <div class="text-right">
+            <p class="font-bold text-gray-800 text-lg">Rp3.000</p>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">H+0</span>
+          </div>
+        </div>
+
+        
+
+        <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-6 
+                    hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
+          <div class="flex items-center gap-4">
+            <img src="logo-bni.png" alt="BNI" class="w-20">
+            <span class="font-semibold text-gray-800 text-lg">BNI Virtual Account</span>
+          </div>
+          <div class="text-right">
+            <p class="font-bold text-gray-800 text-lg">Rp3.500</p>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">H+0</span>
+          </div>
+        </div>
+
+        
+
+        <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-6 
+                    hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
+          <div class="flex items-center gap-4">
+            <img src="logo-mandiri.png" alt="Mandiri" class="w-20">
+            <span class="font-semibold text-gray-800 text-lg">Mandiri</span>
+          </div>
+          <div class="text-right">
+            <p class="font-bold text-gray-800 text-lg">Rp3.500</p>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">H+1</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Virtual Account</h3>
+      <div class="grid grid-cols-3 gap-6">
+        <!-- Card Item -->
+        <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-6 
+                    hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
+          <div class="flex items-center gap-4">
+            <img src="../assets/icon/payment/qris.webp" alt="QRIS" class="w-20">
+          </div>
+          <div class="text-right">
+            <p class="font-bold text-gray-800 text-lg">Rp3.000</p>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">H+0</span>
+          </div>
+        </div>
+
+        <div class="flex justify-between items-center bg-white shadow-md rounded-lg p-6 
+                    hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out">
+          <div class="flex items-center gap-4">
+            <img src="../assets/icon/payment/qris.webp" alt="QRIS_REALTIME" class="w-20">
+          </div>
+          <div class="text-right">
+            <p class="font-bold text-gray-800 text-lg">Rp3.000</p>
+            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">H+0 (Realtime Settlement)</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+ <footer
+      class="bg-gradient-to-l from-[#dd0751] to-[#d80032] text-white px-10 py-12"
+    >
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+        <div>
+          <div class="mb-4">
+            <img
+              src="../assets/icon/white_icon_top.svg"
+              alt="Toptrans Logo"
+              class="w-32"
+            />
+          </div>
+          <h4 class="font-semibold text-white mb-1">Trans LIFE</h4>
+          <p class="text-sm text-gray-300">Lihat karir di trans life.</p>
+
+          <div class="flex gap-4 mt-6 text-gray-300">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Penggunaan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Startups & Early</a></li>
+            <li><a href="#">Businesses</a></li>
+            <li><a href="#">Growing businesses</a></li>
+            <li><a href="#">Enterprise</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Produk</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Online Payment</a></li>
+            <li><a href="#">Payment Gateway</a></li>
+            <li><a href="#">Link Payement</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Panduan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Pusat Bantuan</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Docs API</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-semibold text-white mb-3">Perusahaan</h4>
+          <ul class="space-y-2 text-sm text-white">
+            <li><a href="#">TransLIFE</a></li>
+            <li><a href="#">Partner</a></li>
+            <li><a href="#">Karir Kerja</a></li>
+            <li><a href="#">Tentang kami</a></li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-gray-700 mt-10 pt-6 flex md:flex-row items-center justify-between text-sm text-white"
+      >
+        <div class="mb-4 md:mb-0">
+          bagian dari <span class="text-white font-semibold">LT</span>
+          <span class="text-white">financial</span>
+        </div>
+        <div>© 2025 Toptrans (PT Toptrans)</div>
+      </div>
+    </footer>
+
+
+    <!-- BOT -->
+     <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="MoAvKYq8qj0934q1uXyYe";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+<!-- END BOT -->
+ 
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+   <script>
+  const header = document.getElementById("main-header");
+  const logo = document.getElementById("icon");
+
+  // Hanya ambil link langsung di nav (level 1), bukan isi dropdown
+  const navLinks = header.querySelectorAll("nav > a, nav > div > a");
+  const dropdownIcons = header.querySelectorAll("nav > div > a i");
+
+  function updateHeaderOnScroll() {
+    if (window.scrollY > 100) {
+      // Ubah background & teks utama header
+      header.classList.remove(
+        "bg-gradient-to-l",
+        "from-[#dd0751]",
+        "to-[#d80032]",
+        "text-[#f6f9ff]"
+      );
+      header.classList.add("bg-white", "text-[#0b1c39]");
+      logo.src = "../assets/icon/toptrans_color.svg";
+
+      // Ubah warna link utama (level 1)
+      navLinks.forEach(link => {
+        link.classList.remove("text-white");
+        link.classList.add("text-[#0b1c39]");
+      });
+
+      // Ubah warna ikon panah
+      dropdownIcons.forEach(icon => {
+        icon.classList.remove("text-white");
+        icon.classList.add("text-[#0b1c39]");
+      });
+
+    } else {
+      // Kembalikan background & teks utama header
+      header.classList.add(
+        "bg-gradient-to-l",
+        "from-[#dd0751]",
+        "to-[#d80032]",
+        "text-[#f6f9ff]"
+      );
+      header.classList.remove("bg-white", "text-[#0b1c39]");
+      logo.src = "../assets/icon/white_icon_top.svg";
+
+      // Kembalikan warna link utama
+      navLinks.forEach(link => {
+        link.classList.add("text-white");
+        link.classList.remove("text-[#0b1c39]");
+      });
+
+      // Kembalikan warna ikon panah
+      dropdownIcons.forEach(icon => {
+        icon.classList.add("text-white");
+        icon.classList.remove("text-[#0b1c39]");
+      });
+    }
+  }
+
+  window.addEventListener("scroll", updateHeaderOnScroll);
+  window.addEventListener("DOMContentLoaded", updateHeaderOnScroll);
+</script>
+
+    <script src="./assets/js/sc.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+  </body>
+</html>
+
